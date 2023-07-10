@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(224deg, #52BEDB 0%, rgba(66, 191, 225, 0.79) 22.41%, #47CCDB 54.75%, #6E9CDA 100%) no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+}
+.One-section{
+    max-width: 1103px;
+    width: 100%;
+    background-color: white;
+    height: 666px;
+    position: relative;
+    z-index: 5;
+   
+   
+}
+.background-div{
+    background:url(../img/Rectangle\ 4b.svg) no-repeat;
+    height: 100%;
+}
+.One-section__card-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.previus-page{
+    color: #FFF;
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 10px;
+}
+.img-arrow{
+    margin-right: 11px;
+    display: flex;
+    margin-bottom: 50px;
+}
+.One-section__card-title{
+    padding-top: 10%;
+    padding-left: 10px;
+}
+.One-section__card-img img{
+    max-width: 491px;
+    height: auto;
+    width: 100%;
+}
+
+.cicle-one{
+    position: absolute;
+    top: 5%;
+    width: 163px;
+    height: 170px;
+    border-radius: 170px;
+    border: 8px solid #F5FAFD;
+    right: 17%;
+    z-index: 0;
+}
+.cicle-two{
+    position: absolute;
+    bottom: 5%;
+    width: 163px;
+    height: 170px;
+    border-radius: 170px;
+    border: 8px solid #F5FAFD;
+    left: 17%;
+    z-index: 0;
+}
+.cicle-three{
+    position: absolute;
+    top: 5%;
+    width: 69px;
+    height: 66px;
+    border-radius: 69px;
+    border: 5px solid #F5FAFD;
+    z-index: 0;
+    right: 50%;
+}
+.One-section__card{
+    width: 50%;
+}
+.One-section__Payment-Details{
+    width: 50%;
+    margin-left: 48px;
+}
+form{
+    width: 100%;
+    position: relative;
+    height: 91%;
+   
+}
+.Payment-Details-title{
+    padding-top: 10%;
+    color: #000;
+    font-size: 28px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom:39px ;
+}
+input{
+    width: 100%;
+}
+input[type=text]{
+    border:0;
+    border-bottom: 2px solid #C3B7B7;
+    outline: none;
+    margin-bottom: 10px;
+    padding-left: 3px;
+} 
+input[type=date]{
+    border:0;
+    border-bottom: 2px solid #C3B7B7;
+    outline: none;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+} 
+.cvc{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cvvs{
+    border:0;
+    border-bottom: 2px solid #C3B7B7;
+    outline: none;
+    width: 80%;  
+} 
+.year-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+label{
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 29px;
+    
+}
+.btn{ 
+    
+    width: 100%;
+    padding: 22px 0px 21px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #0369BB;
+    color: #FFF;
+    font-size: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border:none;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background: #3e8dce;
+}
+.chetbox{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+}
+.rememberMe{
+    width: 20px;
+    height: 20px;
+    background:rgb(221, 20, 20) ; 
+    border-radius:0px;
+} 
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+.round label:after {
+    border: 2px solid #000000;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+.round input[type="checkbox"]:checked + label {
+    background: #0369BB;
+    border-color: #66bb6a;
+}
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+.chetbox__text{
+    color: #000;
+    font-size: 14px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.round{
+    display: flex;
+}
+.chetbox input{
+    width: 25px;
+}
+.expyears{
+    color:#000000;
+   
+}
+
+.year__div{
+    position: relative;
+    top: -16px;
+}
+.date-arrow{
+    position: relative;
+    background-color: white;
+    width: 20px;
+    right: -89px;
+    top: -35px;
+}
+input[type="date" i]::-webkit-calendar-picker-indicator {
+    background-image: url(../img/image\ 8arrow.png);
+    background-origin: content-box;
+    background-size: contain;
+    height: 2em;
+    width: 2em;
+    opacity: 1;
+    background-repeat: no-repeat;
+    outline: none;
+    position: relative;
+    right: -6px;
+}
+.error-input{
+
+    border-bottom: 2px solid #f00606!important;
+    
+    
+}
+.ok-input{
+    border-bottom: 1px solid #08d83c!important;
+}
+
+#error-messige{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.expyears{
+    color:white;
+}
+.expyears2{
+    color:rgb(0, 0, 0);
+}
+.error-sms{
+    position: relative;
+    top:0;
+    z-index: 30;
+    margin-bottom: 10px;
+}
+.error-text{
+    color:red;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#error4 {
+    margin-right: 1px;
+    position: absolute;
+    z-index: 30;
+    top: 267px;
+}
